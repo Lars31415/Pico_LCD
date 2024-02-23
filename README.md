@@ -1,4 +1,5 @@
 This driver is for I2C LCD displays on Raspberry Pi Pico. 16x2, 20x2, 20x4
+
 It supports:
 
 JOY-IT: SBC-LCD16x2 in 4-bit mode.
