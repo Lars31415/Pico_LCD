@@ -117,14 +117,14 @@ public:
     bool is_ready() const { return initialized_; }
 
 private:
-    i2c_inst_t *i2c_;  /**< I2C instance. */
-    uint8_t addr_;     /**< I2C address of the LCD. */
-    uint8_t rows_;     /**< Number of rows in the LCD. */
-    uint8_t cols_;     /**< Number of columns in the LCD. */
-    uint8_t cur_line_; /**< Current line position. */
-    uint8_t cur_col_;  /**< Current column position. */
-    bool initialized_; /**< Flag indicating if the LCD is initialized. */
-    bool is_4bit_;     /**< Flag indicating if 4-bit communication mode is used. */
+    i2c_inst_t *i2c_;          /**< I2C instance. */
+    uint8_t addr_;             /**< I2C address of the LCD. */
+    uint8_t rows_;             /**< Number of rows in the LCD. */
+    uint8_t cols_;             /**< Number of columns in the LCD. */
+    uint8_t cur_line_;         /**< Current line position. */
+    uint8_t cur_col_;          /**< Current column position. */
+    mutable bool initialized_; /**< Flag indicating if the LCD is initialized. */
+    bool is_4bit_;             /**< Flag indicating if 4-bit communication mode is used. */
 
     uint8_t display_control_; /**< Display control settings. */
     uint8_t display_mode_;    /**< Display mode settings. */
